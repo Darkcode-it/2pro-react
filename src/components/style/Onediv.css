@@ -1,0 +1,40 @@
+.AllDiv{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #E0DEF7;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid #D3D5DA;
+}
+.text{
+align-items: center;
+    margin: 20px;
+    width: 50%;
+    height: auto;
+}
+.title{
+    font-size: 30px;
+    font-weight: 700;
+}
+.subtitle{
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+}
+.stats{
+    display: flex;
+}
+
+.iconHo{
+    display: flex;
+}
+.img3{
+    border-radius: 10px;
+
+    width: 40%;
+    height: auto;
+}

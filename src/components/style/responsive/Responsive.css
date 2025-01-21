@@ -1,0 +1,133 @@
+@media (min-width: 1200px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
+
+@media screen and ( max-width:768px) {
+
+
+    .AllDiv {
+        overflow: hidden;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #E0DEF7;
+        border-radius: 10px;
+        margin-top: 50px;
+        border: 2px solid #D3D5DA;
+        text-align: center;
+        flex-direction: column;
+
+
+    }
+    .title {
+        font-weight: bold;
+        margin-bottom: 20px;
+        width: 263px;
+        height: 120px;
+        gap: 0;
+        opacity: 0;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color:#100A55;
+    }
+    .subtitle{
+        width: 276px;
+        height: 52px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: #6C727F;
+    }
+    .stats {
+        display: block;
+        justify-content: space-around;
+
+    }
+    .stat {
+        text-align: center;
+    }
+    .stat-icon {
+        font-size: 56px;
+
+    }
+    .stat-value {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .img3{
+
+        width: 500px;
+        height: 400px;
+        top: 980px;
+        left: 16px;
+    }
+
+    /*___________________________*/
+
+
+    .btn4{
+        display: none;
+    }
+
+    .article-s {
+        flex-direction: row;
+        display:revert;
+        grid-template-columns: repeat(auto-fit,minmax(5000px,1fr));
+    }
+    .article{
+
+        width: 340px;
+    }
+
+    .input1{
+        width: 300px;
+        height: 56px;
+        top: 248px;
+        left: 24px;
+        gap: 0;
+        border-radius: 8px;
+        opacity: 0;
+
+    }
+    .btn2{
+        margin-top: 8px;
+        width:300px;
+        height:48px;
+        top: 320px;
+        left: 24px;
+        padding: 12px 40px 12px 40px;
+        gap: 10px;
+        border-radius: 8px;
+        opacity: 0;
+        background-color: #7065F0;
+        color: white;
+    }
+    .allDivFooter {
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .allDivFooter{
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+
+
+}
