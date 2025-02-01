@@ -1,14 +1,14 @@
 .AllDiv{
-    width:100%;
+    margin: 40px;
+    width:auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
     background-color: #E0DEF7;
     margin-top: 50px;
     border-radius: 10px;
-    border: 1px solid #D3D5DA;
+    border: 1px solid #e1e1e1;
 }
 .text{
 align-items: center;
@@ -27,6 +27,15 @@ align-items: center;
 }
 .stats{
     display: flex;
+    justify-content: space-between;
+    
+   
+}
+.stat-icon{
+  padding-left: 50px;
+}
+.stat-value{
+ 
 }
 
 .iconHo{

@@ -3,7 +3,7 @@ function Footer() {
     return (
         <footer>
             <div>
-                <img id="logoEnd" src="../../public/img/logo.png" alt="Logo site"/>
+                <img id="logoEnd" src="./img/logo.png" alt="Logo site"/>
             </div>
             <div className="allDivFooter">
                 <div>
@@ -13,7 +13,7 @@ function Footer() {
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#">Reviews</a></li>
                         <li><a href="#">Stories</a></li>
-                        <li><a href="#">BUY A HOME</a></li>
+                        <li><a href="#">BUY A HOM   E</a></li>
                         <li><a href="#">Buy</a></li>
                         <li><a href="#">Finance</a></li>
                     </ul>
@@ -51,10 +51,10 @@ function Footer() {
             <div className="endtext">
                 ©2021 Estatery. All rights reserved
                 <div className="endicon">
-                    <img className="icon-media" src="../../public/img/face.svg" alt=""/>
-                    <img className="icon-media" src="../../public/img/ins.svg" alt=""/>
-                    <img className="icon-media" src="../../public/img/tw.svg" alt=""/>
-                    <img className="icon-media" src="../../public/img/in.svg" alt=""/>
+                    <img className="icon-media" src="./img/face.svg" alt=""/>
+                    <img className="icon-media" src="./img/ins.svg" alt=""/>
+                    <img className="icon-media" src="./img/tw.svg" alt=""/>
+                    <img className="icon-media" src="./img/in.svg" alt=""/>
                 </div>
             </div>
 

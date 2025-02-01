@@ -6,7 +6,7 @@ function Menu() {
 
         <div className="container">
             <nav className="menu" id="nav">
-                <img className="logo" src="../../public/img/logo.png" alt="logo site"/>
+                <img className="logo" src="./img/logo.png" alt="logo site"/>
                 <ol className="menu-item">
                     <li><a href="index.html">Rent</a></li>
                     <li><a href="index.html">Buy</a></li>
@@ -18,7 +18,7 @@ function Menu() {
                     <button className="btn1" type="button">Submit</button>
                     <button className="btn1b" type="button">Submit</button>
                 </div>
-                <img className="ham" src="../../public/img/ham.svg" alt="hamburger menu"/>
+                <img className="ham" src="./img/ham.svg" alt="hamburger menu"/>
             </nav>
             <div id="header-container">
                 <h1>Buy, rent, or sell your property easily</h1>
@@ -26,22 +26,22 @@ function Menu() {
                     A great platform to buy, sell, or even rent your properties without
                     any commisions.
                 </p>
-                <div className="numbers-con" id="numbers-con-desk">
+                <span className="numbers-con" id="numbers-con-desk">
                     <div className="img-num-container">
-                        <img src="../../public/img/h2.png" alt=""/>
+                        {/* <img src="./img/" alt=""/> */}
                         <div>
-                            <p className="visit">50k+</p>
+                            <p   className="visit">50k+</p>
                             <p className="visit">renters</p>
                         </div>
                     </div>
                     <div className="img-num-container">
-                        <img src="../../public/img/" alt=""/>
+                        {/* <img src="./img/" alt=""/> */}
                         <div>
                             <p>10k+</p>
                             <p>properties</p>
                         </div>
                     </div>
-                </div>
+                </span>
                 <div id="rent-list">
                     <p>Rent</p>
                     <p>Buy</p>
@@ -52,15 +52,15 @@ function Menu() {
                         <p>Location</p>
                         <p>Barcelona, Spain</p>
                     </div>
-                    <img src="../../public/img/Line.svg" height="50px" alt=""/>
+                    <img src=".img/Line.svg"/>
                     <div id="when-select">
                         <div>
                             <p>When</p>
                             <p>Select Move-in Date</p>
                         </div>
-                        <img src="../../public/img/Calendar.svg" id="cal-icon" alt=""/>
+                        <img src="./img/Line.svg" id="cal-icon" alt=""/>
                     </div>
-                    <img src="../../public/img/Line.svg" height="50px" alt=""/>
+                    <img src="./img/Line.svg"  alt=""/>
                     <div>
                         <button>Browse Properties</button>
                     </div>
@@ -68,9 +68,9 @@ function Menu() {
                 <div id="location-of-rent-mobile">
                     <input type="text" placeholder="Search location"/>
 
-                    <img className="imgIcon" src="../../public/img/btnsearch.svg" alt=""/>
+                    <img className="imgIcon" src="./img/btnsearch.svg" alt=""/>
                 </div>
-                <img id="map" src="../../public/img/map.svg" alt=""/>
+                <img id="map" src="./img/map.svg" alt=""/>
 
                             </div>
 </div>

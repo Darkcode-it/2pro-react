@@ -1,37 +1,35 @@
 .third-wrapper{
+    width: 99%;
+    height: auto;
+    margin: 10px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10px;
     background-color: #100A55;
     color: white;
     padding: 10px;
+    border-radius: 10px;
 
 }
+
 .paragraph2{
     color: #9EA3AE;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .input1{
     width: 300px;
     height: 56px;
-    top: 248px;
-    left: 24px;
-    gap: 0;
     border-radius: 8px;
-    opacity: 0;
-    border-style: none;
+
 
 }
 .btn2{
-    width: 137px;
-    height: 48px;
-    top: 254px;
-    left: 839px;
-    padding: 12px 40px 12px 40px;
-    gap: 10px;
+    width: 90px;
+    height: 40px;
     border-radius: 8px;
-    opacity: 0;
     background-color: #7065F0;
     color: white;
-    border-style: none;
+margin-left: -100px;
 }

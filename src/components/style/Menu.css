@@ -1,15 +1,13 @@
 *{
-  /*background-color: #f011;*/
+  /* background-color: #f011; */
   /*  border-width: 1px;*/
 }
 
 body {
+    border: 50px  solid rgb(251, 251, 251);
+ background-color: #f7f7fd;
 }
-.container {
-    margin: 20px 20px 20px 20px;
-    width: 100%;
-    height: 100%;
-}
+
 .ham{
     display: none;
 }
@@ -38,9 +36,9 @@ li {
 }
 
 .btns{
-
     display: flex;
     gap: 20px;
+    padding-right: 20px;
 }
 
 .responsive{
@@ -111,9 +109,9 @@ li {
 #header-container .numbers-con {
     display: flex;
     gap: 80px;
-    z-index: 99;
+    z-index: 2;
     position: relative;
-    padding: 48px 160px;
+    padding: 20px 160px;
 }
 
 
@@ -152,7 +150,7 @@ li {
 .img-num-container {
     display: flex;
     gap: 24px;
-    z-index: 99;
+    z-index:99;
     position: relative;
 }
 
@@ -236,8 +234,9 @@ li {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 100%;
-    z-index: 2;
+    z-index: 1;
+    width: auto;
+    height: auto;
 }
 
 

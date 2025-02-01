@@ -10,23 +10,23 @@ function Onediv() {
 
                 <div className="stats">
                     <div className="stat">
-                        <img className="stat-icon" src="../../public/img/ho.svg" alt=""/>
-                        <div className="stat-value">7.4%</div>
+                        <img className="stat-icon" src="./img/ho.svg" alt=""/>
+                        <h6 className="stat-value">7.4%</h6>
                         <h5 className="stat-value">Property Return Rate</h5>
                     </div>
                     <div className="stat">
-                        <img className="stat-icon" src="../../public/img/ho.svg " alt=""/>
-                        <div className="stat-value">3,856</div>
-                        <h5>Property in Sell & Rent</h5>
+                        <img className="stat-icon" src="./img/se.svg " alt=""/>
+                        <h6 className="stat-value">3,856</h6>
+                        <h5 className="stat-value">Property in Sell & Rent</h5>
                     </div>
                     <div className="stat">
-                        <img className="stat-icon" src="../../public/img/ho.svg" alt=""/>
-                        <div className="stat-value">2,540</div>
-                        <h5>Daily Completed Transactions</h5>
+                        <img className="stat-icon" src="./img/ho.svg" alt=""/>
+                        <h6 className="stat-value">2,540</h6>
+                        <h5 className="stat-value">Daily Completed Transactions</h5>
                     </div>
                 </div>
             </div>
-            <img className="img3" src="../../public/img/h3.svg" alt=""/>
+            <img className="img3" src="./img/h3.svg" alt=""/>
 
         </div>
 
