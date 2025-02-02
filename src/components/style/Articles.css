@@ -59,6 +59,8 @@
 }
 
 .subtitle-price {
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: darkgray;
     width: 100%;
     height: auto;
@@ -69,6 +71,7 @@
     border-top: 1px solid #adadad;
     display: flex;   
     margin: 0 30px;
+   
 }
 
 .icon-domain {

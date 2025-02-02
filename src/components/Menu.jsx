@@ -35,7 +35,7 @@ function Menu() {
                         </div>
                     </div>
                     <div className="img-num-container">
-                        {/* <img src="./img/" alt=""/> */}
+                        {/* <img src="./img/location.svg" alt=""/> */}
                         <div>
                             <p>10k+</p>
                             <p>properties</p>
@@ -52,13 +52,13 @@ function Menu() {
                         <p>Location</p>
                         <p>Barcelona, Spain</p>
                     </div>
-                    <img src=".img/Line.svg"/>
+                    <img src="./img/Line.svg"/>
                     <div id="when-select">
                         <div>
                             <p>When</p>
                             <p>Select Move-in Date</p>
                         </div>
-                        <img src="./img/Line.svg" id="cal-icon" alt=""/>
+                        <img src="./img/location.svg" id="cal-icon" alt=""/>
                     </div>
                     <img src="./img/Line.svg"  alt=""/>
                     <div>
@@ -68,7 +68,7 @@ function Menu() {
                 <div id="location-of-rent-mobile">
                     <input type="text" placeholder="Search location"/>
 
-                    <img className="imgIcon" src="./img/btnsearch.svg" alt=""/>
+                    {/* <img className="imgIcon" src="./img/ho.svg" alt=""/> */}
                 </div>
                 <img id="map" src="./img/map.svg" alt=""/>
 
