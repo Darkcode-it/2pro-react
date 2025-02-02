@@ -1,4 +1,5 @@
 import "./style/Twodiv.css"
+import "./style/responsive/ResponsiveTwodiv.css"
 export default function Twodiv() {
     return (
         <div className="second">
@@ -8,7 +9,7 @@ export default function Twodiv() {
                 vacation condo shopping, or to just look at dream homes in new areas. Thanks for fun home shopping and
                 comparative analyzing, Estatery!”</h3>
             <p>Mira Culos, Renter </p>
-          {/* <img className="img-user" src="./img/p.svg" alt=""/>   */}
+           {/*<img className="img-user" src="./img/p.svg" alt=""/>*/}
         </div>
         );
 }

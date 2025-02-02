@@ -8,7 +8,7 @@ body {
  background-color: #f7f7fd;
 }
 
-.ham{
+.iconmenu{
     display: none;
 }
 
@@ -29,8 +29,13 @@ li {
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 
 }
+.Searchicon{
+    display: none;
+}
+
 .menu-item > li {
     font-size: 20px;
 }

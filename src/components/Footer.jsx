@@ -1,4 +1,9 @@
 import "./style/Footer.css"
+import "./style/responsive/ResponsiveFooter.css"
+import { CiFacebook } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+
 function Footer() {
     return (
         <footer>
@@ -51,10 +56,11 @@ function Footer() {
             <div className="endtext">
                 ©2021 Estatery. All rights reserved
                 <div className="endicon">
-                    <img className="icon-media" src="./img/face.svg" alt=""/>
-                    <img className="icon-media" src="./img/ins.svg" alt=""/>
-                    <img className="icon-media" src="./img/tw.svg" alt=""/>
-                    <img className="icon-media" src="./img/in.svg" alt=""/>
+
+                    <CiFacebook size="30px" color="#7065f0" href="https://www.facebook.com/DarkCodeit"/>
+                    <FaGithub size="30px" color="#7065f0" href="https://github.com/Darkcode-it"/>
+                    <FaTelegram size="30px" color="#7065f0" href="https://t.me/darkcodeit"/>
+
                 </div>
             </div>
 

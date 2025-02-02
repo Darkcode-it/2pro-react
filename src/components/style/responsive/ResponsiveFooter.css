@@ -1,0 +1,40 @@
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+
+
+
+
+   #logoEnd{
+       width: auto;
+       height: auto;
+       margin: 20px;
+
+   }
+    .allDivFooter{
+
+    }
+.endicon{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

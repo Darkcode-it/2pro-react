@@ -1,4 +1,5 @@
 import "./style/There.css"
+import "./style/responsive/ResponsiveThere.css"
 function There() {
     return (
         <div className="third-wrapper">

@@ -1,4 +1,5 @@
 import "./style/Onediv.css"
+import "./style/responsive/ResponsiveOnediv.css"
 function Onediv() {
     return (
 

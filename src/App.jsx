@@ -13,7 +13,7 @@ function App() {
    <div>
 <Menu/>
        <Onediv/>
-       <Articles/>
+        <Articles/>
        <Twodiv/>
        <There/>
        <Footer/>

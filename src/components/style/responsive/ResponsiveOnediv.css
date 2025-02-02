@@ -1,0 +1,82 @@
+@media screen and (max-width: 1000px) and (min-width: 300px){
+
+
+    .AllDiv {
+        overflow: hidden;
+        margin: 10px;
+        max-width: 100%;
+        height: auto;
+        background-color: #E0DEF7;
+        border-radius: 10px;
+        border: 1px solid #D3D5DA;
+        text-align: center;
+        flex-direction: column;
+
+
+    }
+    .text{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -0.01em;
+        color:#100A55;
+    }
+    .subtitle{
+    width: 100%;
+        height: auto;
+        font-size: 16px;
+        color: #6C727F;
+    }
+    .stats {
+        display: block;
+        justify-content: space-around;
+
+    }
+    .stat {
+
+            }
+    .stat-icon {
+    }
+        .stat-value {
+   font-size: 16px;
+
+    }
+
+    .img3{
+        width: 400px;
+        height:auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

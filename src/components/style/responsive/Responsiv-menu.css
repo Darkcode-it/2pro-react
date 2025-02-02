@@ -1,122 +1,79 @@
 
-@media screen and ( max-width:1090px)   and (min-width:300px){
-    html{
-    }
-    .logo {
+@media screen and (max-width: 1000px) and (min-width: 300px){
+   body{
+       width: 100%;
+       height:auto;
+    border: 9px solid white;
+   }
 
-     padding: 0;
-        margin-left: 20px;
 
-    }
-    .ham {
-        display: block;
-        width: 18px;
-        position: absolute;
-        right: 40px;
-        padding: 10px;
-        top: 30px;
+  .iconmenu{
+    display: block;
+      right: 20px;
 
-    }
+
+ }
 
     a{
         display: none;
     }
-    .image2 {
-        display: none;
-
-    }
+ 
     .btns{
         display: none;
     }
-    .imgIcon{
-        padding: 8px;
-        width: 35%;
-        margin: 0;
-    }
-}
-@media screen and (max-width: 1024px) {
+
+
     #header-container #header-p {
         font-size: 20px;
+        width: 100%;
+        height: auto;
         line-height: 30px;
         font-weight: 400;
-        width: 70%;
-        height: auto;
         text-align: center;
         padding: 0;
     }
-}
-@media screen and (max-width: 1024px) {
-    #header-container #numbers-con-desk {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 1024px) {
+
+    #header-container #numbers-con-desk {
+        display: flex;
+        padding: 0;
+    }
+
     #header-container .numbers-con-mob {
         display: flex;
-        gap: 80px;
-        z-index: 99;
-        position: relative;
-        padding: 48px 0;
+
     }
 
-    #header-container .numbers-con-mob img {
-        display: inline;
-        z-index: 99;
-        position: relative;
-    }
 
-    #header-container .numbers-con-mob p:first-of-type {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        width: auto;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 40px;
-        color: #7065f0;
-        z-index: 99;
-        position: relative;
-    }
 
-    #header-container .numbers-con-mob p:nth-of-type(2) {
-        color: #6c727f;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        z-index: 99;
-        position: relative;
-    }
-}
 
-@media screen and (max-width: 1024px) {
+
+
+
+
+
     #header-container h1 {
         font-size: 40px;
-        line-height: 44px;
+        line-height: 40px;
         font-weight: 700;
-        width: 70%;
+        width: 100%;
+        height: auto;
         padding: 0;
-        margin-top: 48px;
+        margin-top: 40px;
         text-align: center;
     }
     #header-container {
-        width: 90%;
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-padding-top: 0
-    }
 
-    header {
-        width: 100%;
     }
-}
-
-@media screen and (max-width: 1024px) {
     #rent-list {
         margin: 0;
         margin-top: 48px;
-        min-width: 65%;
+        min-width: 60%;
         display: flex;
         justify-content: center;
     }
@@ -124,51 +81,29 @@ padding-top: 0
         width: 100%;
         text-align: center;
     }
-}
 
-@media screen and (max-width: 1024px) {
     #location-of-rent-mobile {
         display: flex;
         background-color: white;
         backdrop-filter: blur(40px);
-        min-width: 65%;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
+        min-width:90%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     #location-of-rent {
         display: none;
     }
     #location-of-rent-mobile input {
-        width: 100%;
-        padding: 28px 16px;
+        width: 50%;
+            padding: 28px 16px;
         border: none;
     }
-    #location-of-rent-mobile img {
-        border: none;
-        color: white;
-        /*border-radius: 0 0 8px 8px;*/
-    }
-}
-@media screen and (max-width: 1024px) {
+
+
     #map {
         display: none;
     }
-}
-@media screen and (max-width: 1400px) {
-    #cart1 {
-        display: none;
-    }
-    #cart2 {
-        display: none;
-    }
-}
-@media screen and (max-width: 1024px) {
-    #cart1 {
-        display: none;
-    }
-    #cart2 {
-        display: none;
-    }
+
 }
 
 

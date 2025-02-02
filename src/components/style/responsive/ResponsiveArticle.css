@@ -1,0 +1,69 @@
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+
+.first{
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    display: block;
+    flex-direction: column;
+
+
+}
+
+.article-s {
+    display: block;
+    width: 95%;
+    height: auto;
+
+
+}
+    .article{
+
+        margin: 10px;
+        width: 100%;
+        height: auto;
+
+    }
+.img-article{
+    width: 100%;
+    height: auto;
+}
+.icon-plice{
+    width: 100%;
+}
+.price{
+
+}
+.title-price{
+
+}
+.subtitle-price{
+    width: auto;
+    height: auto;
+}
+.Facilities{
+    /*width: 85%;*/
+    width: auto;
+    height: auto;
+
+}
+.Beds{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
