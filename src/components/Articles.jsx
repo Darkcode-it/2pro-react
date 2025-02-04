@@ -6,6 +6,7 @@ import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
 import { MdOutlineBathroom } from "react-icons/md";
 export default function Articles() {
     return (
+
         <div>
             <div className="first">
                 <div className="article-s">

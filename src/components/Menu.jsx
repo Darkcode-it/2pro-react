@@ -30,7 +30,6 @@ export default function Menu() {
                 <span className="numbers-con" id="numbers-con-desk">
                     <div className="img-num-container">
                         {/* <img src="./img/locasion.svg" alt=""/> */}
-
                         <div>
                             <p   className="visit">50k+</p>
                             <p className="visit">renters</p>
@@ -54,7 +53,11 @@ export default function Menu() {
                         <p>Location</p>
                         <p>Barcelona, Spain</p>
                     </div>
+
                     {/*<img src="./img/Line.svg"/>*/}
+
+                    <img src="./img/Line.svg"/>
+
                     <div id="when-select">
                         <div>
                             <p>When</p>
@@ -69,11 +72,14 @@ export default function Menu() {
                 </div>
                 <div id="location-of-rent-mobile">
                     <input type="text" placeholder="Search location"/>
+
                      {/*<img className="imgIcon" src="./img/ho.svg" alt=""/> */}
                     <FaSearchLocation  className="Searchicon"/>
+                    {/* <img className="imgIcon" src="./img/ho.svg" alt=""/> */}
                 </div>
                 <img id="map" src="./img/map.svg" alt=""/>
-                            </div>
+            </div>
+
 </div>
 
 ) ;
