@@ -1,0 +1,177 @@
+/* PropertyCard.css */
+:root {
+    --primary-color: #7065f0;
+    --text-dark: #100A55;
+    --text-light: #6C727F;
+    --border-color: #e8e6f9;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Base Styles */
+  .property-section {
+    padding: 4rem 1rem;
+  }
+  
+  .property-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  /* Property Card */
+  .property-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(112, 101, 240, 0.15);
+  }
+  
+  .property-card__header {
+    position: relative;
+  }
+  
+  .property-card__image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--primary-color);
+  }
+  
+  .property-card__favorite {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .property-card__favorite-icon {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  
+  .property-card__favorite:hover .property-card__favorite-icon {
+    transform: scale(1.1);
+  }
+  
+  .property-card__body {
+    padding: 1.5rem;
+  }
+  
+  .property-card__price-info {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .property-card__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .property-card__period {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  .property-card__title {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+  }
+  
+  .property-card__location {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+  }
+  
+  .property-card__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+  }
+  
+  .property-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .property-feature__icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  span{
+    color: #6C727F;
+  }
+
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .property-section {
+      padding: 2rem 1rem;
+   padding-right: 20px;
+      overflow-x: auto; /* فعال کردن اسکرول افقی */
+    }
+  
+    .property-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 1.5rem;
+      padding-bottom: 1rem;
+      width: max-content;
+    }
+  
+    .property-card {
+      min-width: 280px; /* حداقل عرض برای هر کارت */
+      margin: 0;
+      scroll-snap-align: start;
+    }
+  
+    .property-card__features {
+      display: flex;
+  
+      gap: 0.8rem;
+    }
+  
+    .property-card__image {
+      height: 200px;
+    }
+  
+    /* مخفی کردن اسکرولبار */
+    .property-section::-webkit-scrollbar {
+      display: none;
+    }
+    .property-section {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+  
+  @media (hover: none) {
+    .property-card:hover {
+      transform: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+  }

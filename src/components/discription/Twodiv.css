@@ -1,0 +1,118 @@
+/* Twodiv.css */
+:root {
+    --primary-color: #7065f0;
+    --text-dark: #100A55;
+    --text-light: #6C727F;
+    --transition: all 0.3s ease;
+  }
+  
+  .testimonials {
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f8f7ff 0%, #ffffff 100%);
+  }
+  
+  .testimonials__header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+  
+  .testimonials__title {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials__subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+  }
+  
+  .testimonial-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    transition: var(--transition);
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-card__quotes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quote-icon {
+    color: var(--primary-color);
+    font-size: 2rem;
+    opacity: 0.2;
+  }
+  
+  .testimonial-card__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    quotes: "“" "”";
+    position: relative;
+  }
+  
+  .testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .testimonial-card__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    padding: 2px;
+  }
+  
+  .testimonial-card__name {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+  }
+  
+  .testimonial-card__role {
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonials {
+      padding: 2rem 1rem;
+    }
+  
+    .testimonials__title {
+      font-size: 2rem;
+    }
+  
+    .testimonial-card {
+      padding: 2rem;
+      margin: 0 1rem;
+    }
+  
+    .testimonial-card__text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-card__author {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

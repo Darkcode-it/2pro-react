@@ -1,0 +1,111 @@
+
+@media screen and (max-width: 1000px) and (min-width: 300px){
+   body{
+       width: 100%;
+       height:auto;
+    border: 9px solid white;
+   }
+
+
+  .iconmenu{
+    display: block;
+      right: 20px;
+
+
+ }
+
+    a{
+        display: none;
+    }
+ 
+    .btns{
+        display: none;
+    }
+
+
+    #header-container #header-p {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    #header-container #numbers-con-desk {
+        display: flex;
+        padding: 0;
+    }
+
+    #header-container .numbers-con-mob {
+        display: flex;
+
+    }
+
+
+
+
+
+
+
+
+
+    #header-container h1 {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+    #header-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #rent-list {
+        margin: 0;
+        margin-top: 48px;
+        min-width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    #rent-list p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #location-of-rent-mobile {
+        display: flex;
+        background-color: white;
+        backdrop-filter: blur(40px);
+        min-width:90%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #location-of-rent {
+        display: none;
+    }
+    #location-of-rent-mobile input {
+        width: 50%;
+            padding: 28px 16px;
+        border: none;
+    }
+
+
+    #map {
+        display: none;
+    }
+
+}
+
+
+
+
