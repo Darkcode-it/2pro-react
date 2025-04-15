@@ -13,7 +13,7 @@ const properties = [
     size: "6x8 m²"
   },
   { 
-    id: 1, 
+    id: 2, 
     image: "./img/h6.jpg", 
     price: "2,095", 
     title: "Cove Red", 
@@ -23,7 +23,7 @@ const properties = [
     size: "6x8 m²"
   },
   { 
-    id: 1, 
+    id: 3, 
     image: "./img/h8.jpg", 
     price: "2,095", 
     title: "Cove Red", 
@@ -33,7 +33,7 @@ const properties = [
     size: "6x8 m²"
   },
   { 
-    id: 1, 
+    id: 4, 
     image: "./img/h11.jpg", 
     price: "2,095", 
     title: "Cove Red", 
@@ -43,7 +43,7 @@ const properties = [
     size: "6x8 m²"
   },
   { 
-    id: 1, 
+    id: 5, 
     image: "./img/h9.jpg", 
     price: "2,095", 
     title: "Cove Red", 
@@ -53,7 +53,7 @@ const properties = [
     size: "6x8 m²"
   },
   { 
-    id: 1, 
+    id: 6, 
     image: "./img/h2.jpg", 
     price: "2,095", 
     title: "Cove Red", 
@@ -63,7 +63,7 @@ const properties = [
     size: "6x8 m²"
   },
   { 
-    id: 1, 
+    id: 7, 
     image: "./img/h1.jpg", 
     price: "2,095", 
     title: "Cove Red", 
@@ -73,7 +73,7 @@ const properties = [
     size: "6x8 m²"
   },
   { 
-    id: 1, 
+    id: 8, 
     image: "./img/h3.jpg", 
     price: "2,095", 
     title: "Cove Red", 
@@ -81,9 +81,7 @@ const properties = [
     beds: 4, 
     baths: 2, 
     size: "6x8 m²"
-  },
-
- 
+  }
 ];
 
 export default function PropertyList() {

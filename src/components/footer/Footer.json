@@ -1,0 +1,60 @@
+{
+    "footerLinks": [
+      {
+        "title": "فروش ملک",
+        "links": [
+          { "label": "درخواست پیشنهاد", "href": "#" },
+          { "label": "لیست قیمت‌ها", "href": "#" },
+          { "label": "نظرات مشتریان", "href": "#" },
+          { "label": "تجربیات مشتریان", "href": "#" }
+        ]
+      },
+      {
+        "title": "خرید، اجاره و فروش",
+        "links": [
+          { "label": "خرید و فروش املاک", "href": "#" },
+          { "label": "اجاره مسکن", "href": "#" },
+          { "label": "معاملات سازندگان", "href": "#" },
+          { "label": "امنیت و اعتماد", "href": "#" },
+          { "label": "شرایط استفاده", "href": "#" },
+          { "label": "حریم خصوصی", "href": "#" }
+        ]
+      },
+      {
+        "title": "شرکت",
+        "links": [
+          { "label": "درباره ما", "href": "/2pro-react/about" },
+          { "label": "قوانین و مقررات", "href": "/2pro-react/terms" },
+          { "label": "فرصت‌های شغلی", "href": "#" },
+          { "label": "تماس با ما", "href": "#" },
+          { "label": "سرمایه‌گذاران", "href": "#" },
+          { "label": "وبلاگ", "href": "/2pro-react/blog" },
+          { "label": "راهنماها", "href": "#" },
+          { "label": "سوالات متداول", "href": "#" },
+          { "label": "مرکز پشتیبانی", "href": "#" }
+        ]
+      }
+    ],
+    "socialLinks": [
+      {
+        "icon": "CiFacebook",
+        "href": "https://www.facebook.com/DarkCodeit",
+        "label": "فیس‌بوک"
+      },
+      {
+        "icon": "FaGithub",
+        "href": "https://github.com/Darkcode-it",
+        "label": "گیت‌هاب"
+      },
+      {
+        "icon": "FaTelegram",
+        "href": "https://t.me/darkcodeit",
+        "label": "تلگرام"
+      },
+      {
+        "icon": "CiLinkedin",
+        "href": "#",
+        "label": "لینکدین"
+      }
+    ]
+  }

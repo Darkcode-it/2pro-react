@@ -1,0 +1,60 @@
+KurdishBlog.css
+.kurdistan-blog {
+    direction: rtl;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  }
+  
+  .local-title {
+    color: #1a5276;
+    font-family: 'Sahel', sans-serif;
+    text-align: center;
+    border-bottom: 3px solid #7d3c98;
+    padding-bottom: 1rem;
+  }
+  
+  .cultural-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4a235a;
+    margin: 1rem 0;
+    line-height: 1.8;
+  }
+  
+  .kurdish-text {
+    font-family: 'Noto Sans Kurdish', sans-serif;
+    font-size: 1.1rem;
+    color: #7d3c98;
+    display: block;
+  }
+  
+  /* بهبود کارت مقالات برای جذابیت بیشتر */
+  .blog-post {
+    border: 1px solid #d6d6d6;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(122, 88, 159, 0.15);
+  }
+  
+  .post-title {
+    color: #2c3e50;
+    font-size: 1.4rem;
+  }
+  
+  .tag {
+    background: #e8d6f0;
+    color: #7d3c98;
+  }
+  
+  .read-more {
+    border: 1px solid #7d3c98;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .read-more:hover {
+    background: #7d3c98;
+    color: white;
+  }

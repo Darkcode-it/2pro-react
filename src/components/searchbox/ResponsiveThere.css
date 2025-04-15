@@ -1,0 +1,62 @@
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+
+
+   .third-wrapper{
+       width: auto;
+       height: auto;
+
+   }
+
+   .third{
+       width: auto;
+       height: auto;
+   }
+
+
+    .titleSearch{
+        color: #9EA3AE;
+        width: auto;
+        height: auto;
+    }
+
+    .textSearch{
+        color: #E0DEF7;
+        width: auto;
+        height: auto;
+    }
+
+    .paragraph{
+        color: #E0DEF7;
+        width: auto;
+        height: auto;
+    }
+  .SearchVsButton{
+      width: auto;
+      height: auto;
+      background-color:white;
+      border-radius: 10px;
+  }
+   .input1{
+       width: auto;
+       height: auto;
+   }
+    .btn2{
+padding: 10px;
+        margin: 5px;
+        background-color: #7065F0;
+        color: white;
+        width: 100px;
+        height: auto;
+    }
+
+    .paragraph2{
+        width: auto;
+        height: auto;
+
+    }
+
+
+
+
+
+}
