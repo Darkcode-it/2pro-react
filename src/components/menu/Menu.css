@@ -1,6 +1,6 @@
 /* Menu.css */
 :root {
-  --primary-color: #7065f0;
+  --primary-color: #7065f0 !important; /* Ensure this color is applied */
   --secondary-bg: #f7f7fd;
   --text-dark: #333;
   --border-color: #e0def7;
