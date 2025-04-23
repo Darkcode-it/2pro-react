@@ -1,77 +1,85 @@
 import { useState } from 'react';
-import { FiSend } from 'react-icons/fi';
+import properties from '../../data/properties.json';
 import './There.css';
 
-export default function Newsletter() {
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
+export default function PriceRangeCalculator() {
+  const [budget, setBudget] = useState('');
+  const [filteredHouses, setFilteredHouses] = useState([]);
   const [error, setError] = useState('');
 
-  const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
+  const handleInputChange = (e) => {
+    const rawValue = e.target.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+    const formattedValue = rawValue.replace(/\B(?=(\d{3})+(?!\d))/g, ','); // Add thousand separators
+    setBudget(formattedValue);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    if (!validateEmail(email)) {
-      setError('Please enter a valid email address');
+
+    const numericBudget = parseInt(budget.replace(/,/g, ''), 10); // Remove commas for numeric comparison
+    if (isNaN(numericBudget)) {
+      setError('لطفاً یک عدد معتبر وارد کنید');
       return;
     }
-    
-    setIsSubmitting(true);
+
+    if (numericBudget <= 0) {
+      setError('بودجه باید بیشتر از صفر باشد');
+      return;
+    }
+
     setError('');
-    
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      // Handle successful submission
-    }, 2000);
+    const results = (properties || []).filter(
+      (property) => property.price <= numericBudget
+    );
+    setFilteredHouses(results);
   };
 
   return (
-    <section className="newsletter">
-      <div className="newsletter__container">
-        <div className="newsletter__content">
-          <h2 className="newsletter__title">Landlord Exclusive Updates</h2>
-          <p className="newsletter__subtitle">
-            Maximize your property value & get expert insights - Zero Spam Guarantee
+    <section className="price-calculator">
+      <div className="price-calculator__container">
+        <div className="price-calculator__content">
+          <h2 className="price-calculator__title">محاسبه‌گر محدوده قیمت</h2>
+          <p className="price-calculator__subtitle">
+            بودجه ماهانه خود را به تومان وارد کنید
           </p>
 
-          <form onSubmit={handleSubmit} className="newsletter__form">
-            <div className="newsletter__input-group">
+          <form onSubmit={handleSubmit} className="price-calculator__form">
+            <div className="price-calculator__input-group">
               <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="newsletter__input"
-                placeholder="Enter your professional email"
+                type="text"
+                value={budget}
+                onChange={handleInputChange} // Updated to use the new handler
+                className="price-calculator__input"
+                placeholder="مثال: 1,000,000"
                 required
-                aria-label="Email address"
+                aria-label="مبلغ بودجه به تومان"
               />
-              <button 
-                type="submit"
-                className="newsletter__button"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  'Submitting...'
-                ) : (
-                  <>
-                    <FiSend className="newsletter__button-icon" />
-                    Get Updates
-                  </>
-                )}
+              <button type="submit" className="price-calculator__button">
+                جستجو
               </button>
             </div>
 
-            {error && <p className="newsletter__error">{error}</p>}
-
-            <p className="newsletter__stats">
-              Join 10,000+ landlords in our premium community
-            </p>
+            {error && <p className="price-calculator__error">{error}</p>}
           </form>
+
+          <div className="price-calculator__results">
+            {filteredHouses.length > 0 ? (
+              <ul className="results-list">
+                {filteredHouses.map((property) => (
+                  <li key={property.id} className="result-item">
+                    <span className="property-title">{property.title}</span>
+                    <span className="property-price">
+                      {property.price.toLocaleString('fa-IR')} تومان
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="price-calculator__no-results">
+                ⚠️ موردی یافت نشد
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </section>

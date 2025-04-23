@@ -2,17 +2,17 @@ import './Onediv.css';
 
 function Onediv() {
   const stats = [
-    { icon: './img/ho.svg', value: '7.4%', label: 'Property Return Rate' },
-    { icon: './img/se.svg', value: '3,856', label: 'Property in Sell & Rent' },
-    { icon: './img/ho.svg', value: '2,540', label: 'Daily Completed Transactions' }
+    { icon: './img/ho.svg', value: '۷.۴٪', label: 'نرخ بازگشت املاک' },
+    { icon: './img/se.svg', value: '۳,۸۵۶', label: 'املاک برای فروش و اجاره' },
+    { icon: './img/ho.svg', value: '۲,۵۴۰', label: 'معاملات تکمیل‌شده روزانه' }
   ];
 
   return (
     <section className="hero">
       <div className="hero__content">
-        <h1 className="hero__title">The smart way to find your perfect home</h1>
+        <h1 className="hero__title">راه هوشمندانه برای یافتن خانه ایده‌آل شما</h1>
         <p className="hero__subtitle">
-          Discover your dream property among 10,000+ listings with our AI-powered search
+          ملک رویایی خود را از میان بیش از ۱۰,۰۰۰ لیست با جستجوی هوش مصنوعی ما پیدا کنید
         </p>
 
         <div className="stats-grid">
@@ -35,7 +35,7 @@ function Onediv() {
 
       <img 
         src="./img/h10.jpg" 
-        alt="Modern housing illustration" 
+        alt="تصویری از خانه‌های مدرن" 
         className="hero__image" 
       />
     </section>

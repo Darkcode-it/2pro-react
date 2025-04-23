@@ -101,6 +101,125 @@
     color: var(--text-light);
   }
   
+  .price-calculator {
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f8f7ff 0%, #ffffff 100%);
+  }
+  
+  .price-calculator__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .price-calculator__content {
+    text-align: center;
+  }
+  
+  .price-calculator__title {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .price-calculator__subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .price-calculator__form {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  .price-calculator__input-group {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .price-calculator__input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .price-calculator__input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(112, 101, 240, 0.2);
+  }
+  
+  .price-calculator__button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .price-calculator__button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  .price-calculator__button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .price-calculator__error {
+    color: var(--error-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .price-calculator__results {
+    margin-top: 2rem;
+  }
+  
+  .results-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #fff;
+    transition: var(--transition);
+  }
+  
+  .result-item:hover {
+    background: #f8f7ff;
+  }
+  
+  .property-title {
+    font-weight: bold;
+    color: var(--text-dark);
+  }
+  
+  .property-price {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
   /* Responsive Design */
   @media (max-width: 768px) {
     .newsletter {
@@ -119,10 +238,31 @@
       width: 100%;
       justify-content: center;
     }
+  
+    .price-calculator {
+      padding: 2rem 1rem;
+    }
+  
+    .price-calculator__title {
+      font-size: 2rem;
+    }
+  
+    .price-calculator__input-group {
+      flex-direction: column;
+    }
+  
+    .price-calculator__button {
+      width: 100%;
+      justify-content: center;
+    }
   }
   
   @media (max-width: 480px) {
     .newsletter__input {
+      padding: 0.8rem 1rem;
+    }
+  
+    .price-calculator__input {
       padding: 0.8rem 1rem;
     }
   }

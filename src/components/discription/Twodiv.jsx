@@ -5,10 +5,10 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      text: "Estatery is the platform I go to on almost a daily basis for 2nd home and vacation condo shopping, or to just look at dream homes in new areas. Thanks for fun home shopping and comparative analyzing, Estatery!",
-      author: "Ahmad Rasuli",
+      text: "استیتری پلتفرمی است که من تقریباً به صورت روزانه برای خرید خانه دوم و آپارتمان تعطیلات یا فقط برای دیدن خانه‌های رویایی در مناطق جدید به آن مراجعه می‌کنم. ممنون از خرید خانه سرگرم‌کننده و تحلیل‌های مقایسه‌ای، استیتری!",
+      author: "احمد رسولی",
       url: "https://darkcode-it.github.io/whoami/",
-      role: "Renter",
+      role: "مستأجر",
       avatar: "./img/my.jpg"
     }
   ];
@@ -16,8 +16,8 @@ export default function Testimonials() {
   return (
     <section className="testimonials">
       <div className="testimonials__header">
-        <h2 className="testimonials__title">What Our Clients Say</h2>
-        <p className="testimonials__subtitle">Hear from property managers, landlords, and tenants</p>
+        <h2 className="testimonials__title">نظر مشتریان ما</h2>
+        <p className="testimonials__subtitle">نظرات مدیران املاک، صاحب‌خانه‌ها و مستأجران را بشنوید</p>
       </div>
 
       <div className="testimonials__content">

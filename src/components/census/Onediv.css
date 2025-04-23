@@ -51,6 +51,8 @@
   }
   
   .stat-card {
+    background-color: rgba(255, 255, 255, 0.582);
+
     display: flex;
     gap: 1rem;
     padding: 1.5rem;
@@ -76,7 +78,7 @@
   .stat-card__value {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: #100A55; /* تغییر رنگ به نارنجی روشن */
     margin-bottom: 0.25rem;
   }
   
