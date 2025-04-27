@@ -1,130 +1,152 @@
-import { useState, useRef, useEffect } from 'react';
-import { LuMenu } from 'react-icons/lu';
+import React, { useState, useEffect, useRef } from 'react';
+import { XMarkIcon, Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import menuData from './Menu.json';
 import './Menu.css';
-import { Link } from 'react-router-dom';
-export default function Menu() {
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
+const Menu = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
   const menuRef = useRef(null);
-  const hideTimeout = useRef(null); // Add a ref to manage the timeout
-
-  const menuItems = [
-    {
-      title: "ساختمان",
-      subItems: ["تکمیل شناژ", "نیمه شناژ", "شناژ قائم آهن"]
-    },
-    {
-      title: "زمین مسکونی",
-      subItems: ["محدوده شهری", "محدوده غیر شهری"]
-    },
-    {
-      title: "کشاورزی",
-      subItems: ["دیمه", "بارانی"]
-    },
-    {
-      title: "آپارتمان",
-      subItems: ["آپارتمان اول", "آپارتمان دوم"]
-    }
-  ];
-
-  const toggleSubmenu = (title) => {
-    if (hideTimeout.current) {
-      clearTimeout(hideTimeout.current); // Clear any existing timeout
-    }
-    setActiveSubmenu(activeSubmenu === title ? null : title);
-  };
-
-  const hideSubmenuWithDelay = () => {
-    hideTimeout.current = setTimeout(() => {
-      setActiveSubmenu(null);
-    }, 2000); // 1-second delay
-  };
-
-  const cancelHideSubmenu = () => {
-    if (hideTimeout.current) {
-      clearTimeout(hideTimeout.current); // Cancel the hide timeout
-    }
-  };
-
-  const handleClickOutside = (e) => {
-    if (menuRef.current && !menuRef.current.contains(e.target)) {
-      setActiveSubmenu(null);
-      setIsMobileOpen(false);
-    }
-  };
+  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      if (hideTimeout.current) {
-        clearTimeout(hideTimeout.current); // Clear timeout on unmount
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+        setActiveMenu(null);
       }
     };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const handleAction = (type) => (e) => {
+    e.preventDefault();
+    if (type === 'login') {
+      navigate('/2pro-react/login'); // Navigate to the Login component
+    } else if (type === 'register') {
+      navigate('/2pro-react/register'); // Navigate to the Register component
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <nav className="navbar" ref={menuRef}>
-      <div className="navbar__left">
-        <img 
-          src="/logo.png" 
-          alt="لوگو شرکت" 
-          className="navbar__logo" 
-        />
-      </div>
+    <nav className="menu-container" ref={menuRef}>
+      <div className="menu-inner">
+        <div className="menu-brand" onClick={handleAction('home')}>
+          خانوو
+        </div>
 
-      <button 
-        className={`navbar__toggler ${isMobileOpen ? 'active' : ''}`}
-        onClick={() => setIsMobileOpen(!isMobileOpen)}
-      >
-        <LuMenu size={28} color="#333" />
-      </button>
-
-      <div className={`navbar__content ${isMobileOpen ? 'active' : ''}`}>
-        <ul className="navbar__menu">
-          {menuItems.map((item) => (
-            <li 
-              key={item.title}
-              className={`nav-item ${activeSubmenu === item.title ? 'active' : ''}`}
-              onMouseEnter={() => {
-                if (window.innerWidth > 768) toggleSubmenu(item.title);
-              }}
-              onMouseLeave={() => {
-                if (window.innerWidth > 768) hideSubmenuWithDelay();
-              }}
+        {/* Desktop Menu */}
+        <div className="desktop-menu">
+          {menuData.map((section) => (
+            <div 
+              key={section.title}
+              className="menu-item"
+              onMouseEnter={() => setActiveMenu(section.title)}
+              onMouseLeave={() => setActiveMenu(null)}
             >
-              <button
-                className="nav-link"
-                onClick={() => toggleSubmenu(item.title)}
-              >
-                {item.title}
-                {item.subItems && (
-                  <span className="dropdown-indicator"></span>
-                )}
+              <button className="menu-button">
+                {section.title}
+                <ChevronDownIcon className="dropdown-icon" />
               </button>
 
-              {item.subItems && (
-                <ul 
-                  className={`submenu ${activeSubmenu === item.title ? 'visible' : ''}`}
-                  onMouseEnter={cancelHideSubmenu} // Prevent hiding when hovering over submenu
-                  onMouseLeave={hideSubmenuWithDelay} // Hide with delay when leaving submenu
-                >
-                  {item.subItems.map((subItem) => (
-                    <li key={subItem}>
-                      <a href="#" className="submenu-link">{subItem}</a>
-                    </li>
+              {activeMenu === section.title && (
+                <div className="menu-dropdown">
+                  {section.items.map((item) => (
+                    <a
+                      key={item.link}
+                      href={item.link}
+                      className="dropdown-item"
+                    >
+                      {item.name}
+                    </a>
                   ))}
-                </ul>
+                </div>
               )}
-            </li>
+            </div>
           ))}
-        </ul>
-
-        <div className="navbar__actions">
-          <Link to="/2pro-react/login" className="btn btn-login">ورود</Link>
-          <Link to="/2pro-react/register" className="btn btn-register">ثبت نام</Link>
         </div>
+
+        {/* Auth Buttons */}
+        <div className="auth-section">
+          <button 
+            className="auth-button auth-login"
+            onClick={handleAction('login')}
+          >
+            ورود
+          </button>
+          <button
+            className="auth-button auth-register"
+            onClick={handleAction('register')}
+          >
+            ثبت نام
+          </button>
+        </div>
+
+        {/* Mobile Toggle */}
+        <button 
+          className="mobile-menu-button"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <XMarkIcon /> : <Bars3Icon />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu">
+          {menuData.map((section) => (
+            <div key={section.title}>
+              <button
+                className="mobile-menu-item"
+                onClick={() => setActiveMenu(
+                  activeMenu === section.title ? null : section.title
+                )}
+              >
+                {section.title}
+                <ChevronDownIcon className={`dropdown-icon ${
+                  activeMenu === section.title ? 'rotate-180' : ''
+                }`} />
+              </button>
+
+              {activeMenu === section.title && (
+                <div className="mobile-dropdown">
+                  {section.items.map((item) => (
+                    <a
+                      key={item.link}
+                      href={item.link}
+                      className="dropdown-item"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+
+          {/* Add Auth Buttons to Mobile Menu */}
+          <div className="auth-section mobile">
+            <button 
+              className="auth-button auth-login" 
+              onClick={handleAction('login')}
+            >
+              ورود
+            </button>
+            <button 
+              className="auth-button auth-register " 
+              onClick={handleAction('register')}
+            >
+              ثبت نام
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
-}
+};
+
+export default Menu;

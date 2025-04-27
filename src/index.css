@@ -3,4 +3,20 @@
 @tailwind utilities;
 
 
-
+@font-face {
+    @font-face {
+        font-family: 'Lalezar';
+        font-weight: 300;
+        src: local(Lalezar), url(./fonts/Lalezar-Regular.ttf) format("truetype");
+    }}
+  
+    * {
+        font-family: 'Lalezar';
+        font-weight: 300;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+  
+  
+    }
