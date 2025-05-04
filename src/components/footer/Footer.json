@@ -35,11 +35,7 @@
       }
     ],
     "socialLinks": [
-      {
-        "icon": "CiFacebook",
-        "href": "https://www.facebook.com/DarkCodeit",
-        "label": "فیس‌بوک"
-      },
+  
       {
         "icon": "FaGithub",
         "href": "https://github.com/Darkcode-it",

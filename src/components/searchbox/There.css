@@ -51,7 +51,7 @@
   .newsletter__input {
     flex: 1;
     padding: 1rem 1.5rem;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #7065f0;
     border-radius: 8px;
     font-size: 1rem;
     transition: var(--transition);
@@ -67,7 +67,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    background: var(--primary-color);
+    background: #7065f0;
     color: white;
     border: none;
     border-radius: 8px;
@@ -145,7 +145,7 @@
   .price-calculator__input {
     flex: 1;
     padding: 1rem 1.5rem;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #7065f0;
     border-radius: 8px;
     font-size: 1rem;
     transition: var(--transition);
@@ -161,7 +161,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    background: var(--primary-color);
+    background:#7065f0;
     color: white;
     border: none;
     border-radius: 8px;

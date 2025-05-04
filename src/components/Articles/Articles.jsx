@@ -28,7 +28,7 @@
 //                 <span className="property-card__price">{property.price} تومان</span>
 //                 <span className="property-card__period">/ماه</span>
 //               </div>
-              
+
 //               <h2 className="property-card__title">{property.title}</h2>
 //               <p className="property-card__location">{property.location}</p>
 
@@ -96,7 +96,7 @@
 //                 </span>
 //                 <span className="property-card__period">{property.period}</span>
 //               </div>
-              
+
 //               <h2 className="property-card__title">{property.title}</h2>
 //               <p className="property-card__location">
 //                 <span className="location-icon">📍</span>
@@ -167,7 +167,7 @@ export default function PropertyList() {
                 </span>
                 <span className="property-card__period">{property.period}</span>
               </div>
-              
+
               <h2 className="property-card__title">{property.title}</h2>
               <p className="property-card__location">
                 <span className="location-icon">📍</span>

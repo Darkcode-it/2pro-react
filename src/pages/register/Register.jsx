@@ -293,7 +293,7 @@ export default function RegisterForm() {
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleChange}
-                    placeholder="۰۹۱۲۳۴۵۶۷۸۹"
+                    placeholder="۰۹۱۲۳۴۵۶۷۸۹لطفا با کیبورد انگلیسی وارد کنید"
                     className={`input-box ${errors.phoneNumber ? "error" : ""}`}
                     disabled={isLoading}
                     autoComplete="tel"

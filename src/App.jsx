@@ -7,6 +7,7 @@ import About from './components/about/About';
 import PropertyRegister from './pages/PropertyRegister/PropertyRegister';
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
 import Blog from './pages/Blog/Blog';
+import ForgotPassword from './pages/forgot/ForgotPassword';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/2pro-react/property-register" element={<PropertyRegister />} />
         <Route path="/2pro-react/terms" element={<TermsAndConditions />} />
         <Route path="/2pro-react/blog" element={<Blog />} />
+        <Route path="/2pro-react/ForgotPassword" element={<ForgotPassword />} />
         <Route path="*" element={"404 Not Found"} />
       </Routes>
     </Router>

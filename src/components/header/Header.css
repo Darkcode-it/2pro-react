@@ -8,7 +8,6 @@ Variables:root {
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Base Styles */
 .header {
   position: relative;
   padding: 4rem 2rem;
@@ -17,15 +16,11 @@ Variables:root {
   background-position: center;
   isolation: isolate;
   direction: rtl;
-  /* اضافه کردن راست‌چین */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* وسط‌چین کردن افقی */
   justify-content: center;
-  /* وسط‌چین کردن عمودی */
   text-align: center;
-  /* متن‌ها وسط‌چین شوند */
 }
 
 .header::before {
@@ -46,9 +41,7 @@ Variables:root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* وسط‌چین کردن افقی محتوا */
   gap: 2rem;
-  /* فاصله بین عناصر */
 }
 
 .header-title {
@@ -59,7 +52,6 @@ Variables:root {
   color: var(--white);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'IRANSans', sans-serif;
-  /* تغییر فونت به فارسی */
 }
 
 .header-description {
@@ -72,39 +64,27 @@ Variables:root {
   border-radius: 20px;
   margin: 0 auto 3rem;
   font-family: 'IRANSans', sans-serif;
-  /* تغییر فونت به فارسی */
 }
-
-/* Stats Grid */
 .stats-grid {
   display: flex;
   justify-content: center;
-  /* وسط‌چین کردن کارت‌ها */
   align-items: center;
-  /* وسط‌چین کردن عمودی کارت‌ها */
   gap: 2rem;
-  /* فاصله بین کارت‌ها */
   flex-wrap: wrap;
-  /* برای نمایش مناسب در صفحات کوچک */
-}
 
+}
 .stat-card {
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* قرار دادن متن‌ها در ستون */
   justify-content: center;
-  /* وسط‌چین کردن عمودی محتوا */
   align-items: center;
-  /* وسط‌چین کردن افقی محتوا */
   padding: 1.5rem;
   border-radius: 16px;
   min-width: 140px;
   background: rgba(0, 0, 0, 0.3);
   box-shadow: var(--shadow);
-
 }
-
 .stat-value {
   font-size: 2rem;
   font-weight: 700;
@@ -118,19 +98,13 @@ Variables:root {
   letter-spacing: 1px;
   font-size: 0.9rem;
   font-family: 'IRANSans', sans-serif;
-  /* تغییر فونت به فارسی */
-
 }
 
-/* Property Actions */
 .actions {
   display: flex;
   justify-content: center;
-  /* وسط‌چین کردن دکمه‌ها */
   align-items: center;
-  /* وسط‌چین کردن عمودی دکمه‌ها */
   gap: 1rem;
-  /* فاصله بین دکمه‌ها */
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
@@ -147,7 +121,6 @@ Variables:root {
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
   font-family: 'IRANSans', sans-serif;
-  /* تغییر فونت به فارسی */
 }
 
 .action-btn:hover {
@@ -156,19 +129,16 @@ Variables:root {
 }
 
 .action-btn.active {
-  color: var(--primary-color);
-  border-bottom-color: var(--primary-color);
+  color: #7065f0;
+  border-bottom-color: #7065f0;
   font-weight: 600;
 }
 
-/* Search Form */
 .search-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* وسط‌چین کردن افقی فرم جستجو */
   gap: 1.5rem;
-  /* فاصله بین عناصر فرم */
   background-color: rgba(255, 255, 255, 0.582);
   /* background: rgba(0, 0, 0, 0.3); */
   padding: 2.5rem;
@@ -177,22 +147,20 @@ Variables:root {
   max-width: 500px;
   margin: 0 auto 3rem;
   direction: rtl;
-  /* اضافه کردن راست‌چین */
+
 }
-
-/* ... بقیه استایلهای فرم جستجو بدون تغییر ... */
-
+.search-box__submit{
+  background-color: #7065f0;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .header-title {
     font-size: 2rem;
   }
-
   .stat-card {
     min-width: 100px;
     padding: 1rem;
   }
-
   .stat-value {
     font-size: 1.5rem;
   }

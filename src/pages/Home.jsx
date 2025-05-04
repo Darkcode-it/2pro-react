@@ -7,6 +7,7 @@ import Footer from "../components/footer/Footer";
 import data from '../components/menu/Menu.json';
 import Onediv from "../components/census/Onediv";
 
+
 const Home = () => {
     return (
         <div>
@@ -17,6 +18,7 @@ const Home = () => {
             <Twodiv />
             <There />
             <Footer />
+        
         </div>
     )
 }
