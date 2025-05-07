@@ -14,11 +14,13 @@ import Users from './pages/Analytics/Users';
 import Analytics from './pages/Analytics/Analytics';
 import Settings from './pages/Analytics/Settings';
 import Index from './pages/Analytics/Index';
+import PWAInstallPrompt from './components/PWAInstallPrompt';
 
 export default function App() {
   return (
     <UserProvider>
       <Router>
+        <PWAInstallPrompt />
         <Routes>
           <Route path="/2pro-react/" element={<Home />} />
           <Route path="/2pro-react/login" element={<Login />} />
