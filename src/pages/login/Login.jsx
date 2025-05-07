@@ -1,11 +1,13 @@
-
 import { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [loginError, setLoginError] = useState('');
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -30,11 +32,39 @@ const Login = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoginError('');
+    
     if (validateForm()) {
-      // منطق ورود اینجا پیاده‌سازی شود
-      console.log('داده‌های فرم:', formData);
+      setIsLoading(true);
+      try {
+        // اینجا می‌توانید به API خود متصل شوید
+        // برای مثال:
+        // const response = await fetch('your-api-endpoint/login', {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify(formData)
+        // });
+        
+        // برای تست، از یک ایمیل و رمز عبور ثابت استفاده می‌کنیم
+        if (formData.email === 'admin@example.com' && formData.password === '123456') {
+          // ذخیره اطلاعات کاربر در localStorage
+          localStorage.setItem('user', JSON.stringify({
+            email: formData.email,
+            isLoggedIn: true
+          }));
+          
+          // هدایت به پنل کاربری
+          navigate('/');
+        } else {
+          setLoginError('ایمیل یا رمز عبور اشتباه است');
+        }
+      } catch (error) {
+        setLoginError('خطا در ورود به سیستم. لطفا دوباره تلاش کنید.');
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -42,6 +72,12 @@ const Login = () => {
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit} noValidate>
         <h1 className="login-title">ورود به حساب کاربری</h1>
+
+        {loginError && (
+          <div className="error-message global-error">
+            {loginError}
+          </div>
+        )}
 
         <div className="form-group">
           <label htmlFor="email">ایمیل</label>
@@ -54,6 +90,7 @@ const Login = () => {
               required
               className="custom-input"
               autoComplete="email"
+              disabled={isLoading}
             />
           </div>
           {errors.email && <span className="error-message">{errors.email}</span>}
@@ -70,12 +107,14 @@ const Login = () => {
               required
               className="custom-input"
               autoComplete="current-password"
+              disabled={isLoading}
             />
             <button
               type="button"
               className="toggle-password"
               onClick={() => setShowPassword(!showPassword)}
               aria-label={showPassword ? 'Hide password' : 'Show password'}
+              disabled={isLoading}
             >
               {showPassword ? (
                 <FaEyeSlash className="eye-icon" />
@@ -90,9 +129,9 @@ const Login = () => {
         <button
           type="submit"
           className="login-button primary-btn"
-          disabled={!formData.email || !formData.password}
+          disabled={!formData.email || !formData.password || isLoading}
         >
-          ورود
+          {isLoading ? 'در حال ورود...' : 'ورود'}
         </button>
 
         <div className="login-links">

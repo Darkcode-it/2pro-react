@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "سفارش جدید ثبت شد",
+        "description": "سفارش #12345 توسط محمد احمدی ثبت شد",
+        "timestamp": "2023-10-05T14:45:00+03:30",
+        "timeDisplay": "۱۵ دقیقه پیش",
+        "type": "order",
+        "priority": "high",
+        "icon": "shopping-cart",
+        "iconColor": "green",
+        "read": false
+    },
+    {
+        "id": 2,
+        "title": "پرداخت جدید",
+        "description": "پرداخت به مبلغ ۲,۵۰۰,۰۰۰ تومان دریافت شد",
+        "timestamp": "2023-10-05T14:00:00+03:30",
+        "timeDisplay": "۱ ساعت پیش",
+        "type": "payment",
+        "priority": "high",
+        "icon": "credit-card",
+        "iconColor": "blue",
+        "read": false
+    },
+    {
+        "id": 3,
+        "title": "کاربر جدید ثبت نام کرد",
+        "description": "سارا محمدی در سایت ثبت نام کرد",
+        "timestamp": "2023-10-05T12:00:00+03:30",
+        "timeDisplay": "۳ ساعت پیش",
+        "type": "user",
+        "priority": "medium",
+        "icon": "users",
+        "iconColor": "purple",
+        "read": true
+    },
+    {
+        "id": 4,
+        "title": "به‌روزرسانی سیستم",
+        "description": "نسخه جدید نرم‌افزار نصب شد",
+        "timestamp": "2023-10-05T10:00:00+03:30",
+        "timeDisplay": "۵ ساعت پیش",
+        "type": "system",
+        "priority": "medium",
+        "icon": "settings",
+        "iconColor": "amber",
+        "read": true
+    },
+    {
+        "id": 5,
+        "title": "محصول جدید اضافه شد",
+        "description": "محصول «گوشی هوشمند مدل X» به فروشگاه اضافه شد",
+        "timestamp": "2023-10-04T08:00:00+03:30",
+        "timeDisplay": "۱ روز پیش",
+        "type": "product",
+        "priority": "low",
+        "icon": "package",
+        "iconColor": "indigo",
+        "read": true
+    }
+]

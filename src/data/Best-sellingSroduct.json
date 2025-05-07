@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "گوشی هوشمند مدل X",
+        "category": "الکترونیک",
+        "price": 12500000,
+        "currency": "تومان",
+        "sales": 245,
+        "stock": 18,
+        "image": "/placeholder.svg"
+    },
+    {
+        "id": 2,
+        "name": "لپ‌تاپ حرفه‌ای مدل Y",
+        "category": "کامپیوتر",
+        "price": 35800000,
+        "currency": "تومان",
+        "sales": 189,
+        "stock": 5,
+        "image": "/placeholder.svg"
+    },
+    {
+        "id": 3,
+        "name": "هدفون بی‌سیم مدل Z",
+        "category": "صوتی",
+        "price": 2300000,
+        "currency": "تومان",
+        "sales": 352,
+        "stock": 42,
+        "image": "/placeholder.svg"
+    },
+    {
+        "id": 4,
+        "name": "ساعت هوشمند مدل W",
+        "category": "پوشیدنی",
+        "price": 4900000,
+        "currency": "تومان",
+        "sales": 127,
+        "stock": 23,
+        "image": "/placeholder.svg"
+    }
+]

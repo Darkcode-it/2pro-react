@@ -1,0 +1,136 @@
+.analytics-container {
+  padding: 1.5rem;
+}
+
+.analytics-header {
+  margin-bottom: 1.5rem;
+}
+
+.analytics-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.analytics-subtitle {
+  color: var(--text-secondary);
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .analytics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .analytics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.analytics-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.card-icon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--text-secondary);
+}
+
+.card-content {
+  margin-top: 0.5rem;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-change {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-change.positive {
+  color: var(--success-color);
+}
+
+.card-change.negative {
+  color: var(--danger-color);
+}
+
+/* Tabs */
+.tabs {
+  width: 100%;
+}
+
+.tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@media (min-width: 640px) {
+  .tabs-list {
+    justify-content: flex-start;
+  }
+}
+
+.tab-trigger {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+@media (min-width: 640px) {
+  .tab-trigger {
+    flex: none;
+  }
+}
+
+.tab-trigger.active {
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.tab-content {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.chart-container {
+  min-width: 300px;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+} 

@@ -1,0 +1,83 @@
+{
+    "stats": [
+      {
+        "id": "active-users",
+        "title": "کاربران فعال",
+        "value": 2450,
+        "formattedValue": "۲,۴۵۰",
+        "change": 12.5,
+        "formattedChange": "+12.5%",
+        "changeType": "increase",
+        "description": "نسبت به ماه گذشته",
+        "icon": "users",
+        "colorScheme": {
+          "background": "blue-100",
+          "text": "blue-700"
+        },
+        "progress": 78,
+        "target": 3000,
+        "unit": "user"
+      },
+      {
+        "id": "monthly-sales",
+        "title": "فروش ماهانه",
+        "value": 125000000,
+        "formattedValue": "۱۲۵M تومان",
+        "change": 8.2,
+        "formattedChange": "+8.2%",
+        "changeType": "increase",
+        "description": "نسبت به ماه گذشته",
+        "icon": "credit-card",
+        "colorScheme": {
+          "background": "green-100",
+          "text": "green-700"
+        },
+        "progress": 65,
+        "target": 150000000,
+        "unit": "currency",
+        "currency": "IRR"
+      },
+      {
+        "id": "conversion-rate",
+        "title": "نرخ تبدیل",
+        "value": 24.5,
+        "formattedValue": "۲۴.۵%",
+        "change": 3.1,
+        "formattedChange": "+3.1%",
+        "changeType": "increase",
+        "description": "نسبت به ماه گذشته",
+        "icon": "pie-chart",
+        "colorScheme": {
+          "background": "purple-100",
+          "text": "purple-700"
+        },
+        "progress": 45,
+        "target": 30,
+        "unit": "percentage"
+      },
+      {
+        "id": "customer-satisfaction",
+        "title": "رضایت مشتری",
+        "value": 98,
+        "formattedValue": "۹۸%",
+        "change": -0.5,
+        "formattedChange": "-0.5%",
+        "changeType": "decrease",
+        "description": "نسبت به ماه گذشته",
+        "icon": "activity",
+        "colorScheme": {
+          "background": "amber-100",
+          "text": "amber-700"
+        },
+        "progress": 92,
+        "target": 95,
+        "unit": "percentage"
+      }
+    ],
+    "metadata": {
+      "lastUpdated": "2023-10-05T15:30:00+03:30",
+      "timeframe": "monthly",
+      "currency": "IRR",
+      "language": "fa"
+    }
+  }
