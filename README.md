@@ -161,14 +161,14 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 </div>
 
-- **Dark Code IT**
-- GitHub: [@darkcode-it](https://github.com/darkcode-it)
+
 
 ---
 
 <div dir="rtl">
 
 با تشکر از شما برای استفاده از 2Pro React! امیدواریم این پروژه برای شما مفید باشد.
+از ذکر نام بنده در هر جای پروژه تون که دوست داشتید متشکرم و در خدمت جامعه اپن سورس هستم.
 
 </div>
 
